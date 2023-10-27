@@ -1,0 +1,17 @@
+name: Workflow
+on: pull_request
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4.1.1
+            # read the config.yaml file using test.py
+            - run: | 
+                    pwd
+                    ls
+            # - name: Read config.yaml
+            #   run: |
+            #     python3 cicd/src/test.py
+            # run dab command
+        
